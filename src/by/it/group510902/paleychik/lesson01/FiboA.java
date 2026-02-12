@@ -37,7 +37,6 @@ public class FiboA {
 
 
     BigInteger slowA(Integer n) {
-        // базовые случаи
         if (n == 0) {
             return BigInteger.ZERO;
         }
@@ -45,9 +44,8 @@ public class FiboA {
             return BigInteger.ONE;
         }
 
-        // рекурсивный вызов
         return slowA(n - 1).add(slowA(n - 2));
-    }   
+    }
 
 
 }
